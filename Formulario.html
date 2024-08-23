@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <a href="./Tabela.html">Tabela</a>
+
+    <h1>Formulário de Contato</h1>
+    <form action="/enviar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <label>Preferência de Contato:</label>
+        <input type="radio" id="email_contato" name="contato_preferencia" value="email">
+        <label for="email_contato">Email</label>
+        <input type="radio" id="telefone_contato" name="contato_preferencia" value="telefone">
+        <label for="telefone_contato">Telefone</label>
+        <br><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            
+        </select>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
